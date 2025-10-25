@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GreatWizard/greatwizard.github.io.git"
+    "url": "git+https://github.com/GreatWizard/greatwizard.github.io.git"
   },
   "author": {
     "name": "Guillaume Gérard",
-    "url": "https://guillaume.sh"
+    "url": "https://guillaume.gerard.pm"
   },
   "bugs": {
     "url": "https://github.com/GreatWizard/greatwizard.github.io/issues"
@@ -15,9 +15,13 @@
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "prebuild": "rm -rf dist",
-    "build": "yarn gistlinktree"
+    "build": "pnpm gistlinktree"
   },
   "dependencies": {
-    "gistlinktree": "^1.0.2"
+    "gistlinktree": "^2.1.1"
+  },
+  "packageManager": "pnpm@10.18.2",
+  "engines": {
+    "node": "22"
   }
 }

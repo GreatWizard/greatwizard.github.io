@@ -6,17 +6,15 @@ index:
     - input: static/icons/favicon.ico
     - input: static/CNAME
 links:
-  - outputDir: artisans
-    gistID: 9f6b9cefc9fd791b931fe550b4946b59
   - outputDir: pkmngo
     gistID: a1fe87c89c8b6bdacf2d8a2b074898bb
     copy:
       - input: static/icons/pokemon.ico
         output: favicon.ico
-  - title: Decoder
-    url: https://decoder.greatwizard.fr
-  - title: Wordle of the Day
-    url: https://wotd.greatwizard.fr
 linksSocial:
   - type: github
-    url: https://github.com/greatwizard
+    url: https://github.com/GreatWizard
+  - type: linkedin
+    url: https://linkedin.com/in/guillaume-g%C3%A9rard-0263b946
+  - type: gitlab
+    url: https://gitlab.com/GreatWizard

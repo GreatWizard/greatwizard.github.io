@@ -9,16 +9,13 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 16
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v5
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: 16.x
-          cache: yarn
-      - name: Yarn Install
-        run: yarn install
-      - name: Build
-        run: yarn build
+          node-version-file: package.json
+      - run: pnpm install
+      - run: pnpm build
       - name: Deploy on github-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
